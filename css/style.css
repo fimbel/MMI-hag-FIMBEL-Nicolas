@@ -1,1 +1,51 @@
-hbgtysfrhbnytgdr
+/*-----------------Class g�n�rale-------------------------------------*/
+html {}
+body{}
+		
+*{margin:0;}
+		
+
+
+
+.clearfix:after{content:"";
+				display:block;
+				clear:both;}	/*ce clearfix after permet de former une boite qui contient lez flottant et ainsi le background-color s'aplique sur toute la boite*/
+
+.flottante{float:left;}
+.clearMOI{clear:both;}
+.margin{margin:0 auto;}		
+
+
+a{display:block;
+width:100%;
+height:100%;}
+
+.text{font-family: '';
+				text-align:center;}
+
+.wrapper{width:80%;}
+
+/*------------------------------------------css de la page----------------------------*/
+.box_title{width:100%;
+            background-color:#242424;
+            /*utilisation de flexbox pour centrer verticalement*/
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;}
+
+.box_title--title1{color:#57c5a0;
+                    font-size: 40px;}
+
+.box_title__search{float:right;
+                /*border-right:solid 1px #7e7e7e;*/
+                padding: 0 10px 0 10px;
+                font-size: 20px;
+                margin: 0.6rem;}
+
+.box_title__search--lien{color:#7e7e7e;
+                            text-decoration: none;}
+
+.box_title--separation{height: 3rem;
+                        width: 1px;
+                        float:right;
+                        background-color:#7e7e7e;}
