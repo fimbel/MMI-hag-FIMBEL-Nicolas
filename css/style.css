@@ -12,6 +12,7 @@ body{}
 				clear:both;}	/*ce clearfix after permet de former une boite qui contient lez flottant et ainsi le background-color s'aplique sur toute la boite*/
 
 .flottante{float:left;}
+.flotright{float:right}
 .clearMOI{clear:both;}
 .margin{margin:0 auto;}		
 
@@ -27,6 +28,7 @@ height:100%;}
 
 /*------------------------------------------css de la page----------------------------*/
 .box_title{width:100%;
+            height: 45px;
             background-color:#242424;
             /*utilisation de flexbox pour centrer verticalement*/
                     display: flex;
@@ -36,16 +38,21 @@ height:100%;}
 .box_title--title1{color:#57c5a0;
                     font-size: 40px;}
 
-.box_title__search{float:right;
-                /*border-right:solid 1px #7e7e7e;*/
-                padding: 0 10px 0 10px;
+.box_title__search{padding: 0.8rem; /*utilisation de flexbox pour centrer verticalement*/
                 font-size: 20px;
-                margin: 0.6rem;}
+                border-right: 1px solid #7e7e7e;}
 
 .box_title__search--lien{color:#7e7e7e;
                             text-decoration: none;}
 
-.box_title--separation{height: 3rem;
-                        width: 1px;
-                        float:right;
-                        background-color:#7e7e7e;}
+
+.menu{height: 60px;}
+
+.menu__boite{height:60px;	
+            line-height:60px;           /*Avec la ligne au dessus pour centre verticalement*/
+            padding:0 0.8rem 0 0.8rem;
+            border-right: 1px solid #7e7e7e;}
+.menu__boiteleft{border-left: 1px solid #7e7e7e;}
+
+.menu__boite--lien{text-decoration: none;}
+.menu__boite--valeur{display: inline;}           /*permet au p de ne pas redessendre à la ligne*/
