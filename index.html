@@ -7,9 +7,6 @@
 		<link rel="stylesheet" media="screen" type="text/css" href="./css/style.css">
         <link rel="stylesheet" media="screen" type="text/css" href="./css/reset.css">
         <link  rel= "stylesheet"  href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" > <!--Pour les font-icons-->
-		
-		<script type="text/javascript" src="./js/jquerymin.js"></script>
-		<script type="text/javascript" src="./js/main.js"></script>
 	
 	</head>	
 <body>
@@ -24,14 +21,14 @@
         <nav class="menu clearfix">
             <div class="wrapper margin">
             <ul>
-                <li class="menu__boite menu__boiteleft flottante"><a class="menu__boite--lien" href="#">Home</a></li>
-                <li class="menu__boite flottante"><a class="menu__boite--lien" href="#">Products</a></li>
-                <li class="menu__boite flottante"><a class="menu__boite--lien" href="#">About</a></li>
-                <li class="menu__boite flottante"><a class="menu__boite--lien" href="#">Pages</a></li>
-                <li class="menu__boite flottante"><a class="menu__boite--lien" href="#">Blog</a></li>
-                <li class="menu__boite flottante"><a class="menu__boite--lien" href="#">Contact</a></li>
-                <li class="menu__boite flotright"><a class="menu__boite--lien" href="#"><i class="fa fa-cart-arrow-down"></i><p class="menu__boite--valeur">0</p></a></li>
-                <li class="menu__boite menu__boiteleft flotright"><a class="menu__boite--lien" href="#">☆<p class="menu__boite--valeur">30</p></a></li>
+                <li class="menu__boite menu__boiteleft flottante"><a href="#">Home</a></li>
+                <li class="menu__boite flottante"><a href="#">Products</a></li>
+                <li class="menu__boite flottante"><a href="#">About</a></li>
+                <li class="menu__boite flottante"><a href="#">Pages</a></li>
+                <li class="menu__boite flottante"><a href="#">Blog</a></li>
+                <li class="menu__boite flottante"><a href="#">Contact</a></li>
+                <li class="menu__boite flotright"><a href="#"><i class="fa fa-cart-arrow-down"></i><p class="menu__boite--valeur">0</p></a></li>
+                <li class="menu__boite menu__boiteleft flotright"><a href="#">☆<p class="menu__boite--valeur">30</p></a></li>
             </ul>
             </div>
         </nav>
@@ -42,7 +39,8 @@
     <!--section du slider avec la bande grise du dessous--> 
 	<section class="slider">
 		<img class="slider__image" src="./images/jambes.jpg" alt="">
-        <div class="slider__carou">
+<!--Manque la boite dans l'image-->
+        <div class="slider__carou flexbox">
             <div class="slider__carou__hover">
                 <div class="slider__carou__hover--bandenoir">
                 </div>
@@ -77,66 +75,75 @@
 	</section>
     
     <!--section bande noir-->
-    <section>
-        <!--utilisé flexbox-->
+    <section class="special flexbox">
+        <div class="special__image">
+            <img class="special__image--taille" src="./images/talon.png" alt="">
+            <p class="special__image--texte">ON SALE</p>
+        </div>
+        <div class="special__image">
+            <img class="special__image--taille" src="./images/baskette.png" alt="">
+            <p class="special__image--texte">SPECIAL OFFERS</p>
+        </div>
+        <div class="special__image">
+            <img class="special__image--taille" src="./images/talonpaillette.png" alt="">
+            <p class="special__image--texte">MUST HAVE</p>
+        </div>
     </section>
     
     
     
     <!--section offre chaussures-->
-    <section>
-        <div class="wrapper">
-            <h2>New arrivals on FOOSESHOES</h2>
-            <a href='#'>Show all</a>
-            <!--Première ligne de 3 Chaussures-->
-            <div>
-                <div>
-                    <img src="./images/achanger.jpg" alt="">
-                    <div>
-                        <div></div>
-                        <div>Even&Odd</div>
-                    </div>
+    <section class="offre">
+        <div class="wrapper margin">
+            <div class="clearfix">
+                <h2 class="flottante">New arrivals on FOOSESHOES</h2>
+                <a class="offre--show flotright" href='#'>Show all</a>
+            </div>
+                <!--Première ligne de 3 Chaussures-->
+            <div class="offre__3chaussures flexbox">
+                <div class="offre__3chaussures__schoose">
+                    <img src="./images/eventoddrose.png" alt="">
+                    <hr>
+                    <div class="offre__3chaussures__shoose--nom">Even&Odd</div>
+                    <div></div>
                 </div>
-                <div>
-                    <img src="./images/achanger.jpg" alt="">
-                    <div>
-                        <div></div>
-                        <div>Even&Odd</div>
-                    </div>
+                <div class="offre__3chaussures__schoose">
+                    <img src="./images/eventoddblack.png" alt="">
+                    <hr>
+                    <div class="offre__3chaussures__shoose--nom">Even&Odd</div>
+                    <div></div>
                 </div>
-                <div>
-                    <img src="./images/achanger.jpg" alt="">
-                    <div>
-                        <div></div>
-                        <div>Buffalo Décolleté</div>
-                    </div>
+                <div class="offre__3chaussures__schoose">
+                    <img src="./images/buffalodecolete.png" alt="">
+                    <hr>
+                    <div class="offre__3chaussures__shoose--nom">Buffalo Décolleté</div>
+                    <div></div>
                 </div>
             </div>
             
-            <h2>Best seller of the month</h2>
-            <a href='#'>Show all</a>
-            <!--Première ligne de 3 Chaussures-->
-            <div>
-                <div>
-                    <img src="./images/achanger.jpg" alt="">
-                    <div>
-                        <div></div>
-                        <div>Even&Odd</div>
-                    </div>
+            <div class="clearfix">
+                <h2 class="flottante">Best seller of the month</h2>
+                <a class="offre--show flotright" href='#'>Show all</a>
+            </div>
+            <!--deuxième ligne de 3 Chaussures-->
+            <div class="offre__3chaussures flexbox">
+                <div class="offre__3chaussures__schoose">
+                    <img src="./images/sansnom.png" alt="">
+                    <hr>
+                    <div class="offre__3chaussures__shoose--nom">Even&Odd</div>
+                    <div></div>
                 </div>
-                <div>
-                    <img src="./images/achanger.jpg" alt="">
-                    <div>
-                        <div></div>
-                        <div>Even&Odd</div>
-                    </div>
+                <div class="offre__3chaussures__schoose">
+                    <img src="./images/eventoddpics.png" alt="">
+                    <hr>
+                    <div class="offre__3chaussures__shoose--nom">Even&Odd</div>
+                    <div></div>
                 </div>
-                <div>
-                    <img src="./images/achanger.jpg" alt="">
-                    <div>
-                        <div></div>
-                        <div>Buffalo Décolleté</div>
-                    </div>
+                <div class="offre__3chaussures__schoose">
+                    <img src="./images/buffalodecoletenoir.png" alt="">
+                    <hr>
+                    <div class="offre__3chaussures__shoose--nom">Buffalo Décolleté</div>
+                    <div></div>
                 </div>
             </div>
             
