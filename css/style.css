@@ -74,10 +74,16 @@ height:100%;}
 .slider__carou__hover--bandenoir{height:8px;
                                 background-color:#000000;
                                 border-right: 1px solid #7e7e7e;
-                                padding: 2px 3px 2px 3px;
-                                border-left: 1px solid #7e7e7e;}
-.slider__carou__hover--bandevert{height:100%;
-                                background-color:#57c5a0;}
+                                border-left: 1px solid #7e7e7e;
+                                border-top: 2px solid #000000;
+                                border-bottom: 2px solid #000000;
+                                padding: 0px 3px 0px 3px;}
+/*Quand "slider__carou__hover", slider__carou__hover--bandenoir" est modifié ainsi que les 2 textes*/
+.slider__carou__hover:hover > .slider__carou__hover--bandenoir{background-color:#57c5a0;
+                                                                background-clip: content-box;}
+.slider__carou__hover:hover > .slider__carou__hover--article{color: #ffffff;}
+.slider__carou__hover:hover > .slider__carou__hover--legende{color: #acacac;}
+
 .slider__carou__hover--article{color: #acacac;
                                 margin: 10px;}
 .slider__carou__hover--legende{color:#686868}
