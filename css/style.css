@@ -27,6 +27,7 @@ height:100%;}
 .wrapper{width:80%;}
 
 /*------------------------------------------css de la page----------------------------*/
+/*------------------------------------------header + menu----------------------------*/
 .box_title{width:100%;
             height: 45px;
             background-color:#242424;
@@ -56,3 +57,27 @@ height:100%;}
 
 .menu__boite--lien{text-decoration: none;}
 .menu__boite--valeur{display: inline;}           /*permet au p de ne pas redessendre à la ligne*/
+
+/*------------------------------------------slider----------------------------*/
+.slider__image{width:100%;}
+
+.slider__carou{width:100%;
+                height:90px;
+                background-color: #2e2e2e;
+                /*utilisation de flexbox mettre au centre*/
+                display:flex;	
+                justify-content:center;	}
+.slider__carou__hover{padding: 10px 0 0 0;			
+                        text-align: center;
+                        width: 16%;}
+
+.slider__carou__hover--bandenoir{height:8px;
+                                background-color:#000000;
+                                border-right: 1px solid #7e7e7e;
+                                padding: 2px 3px 2px 3px;
+                                border-left: 1px solid #7e7e7e;}
+.slider__carou__hover--bandevert{height:100%;
+                                background-color:#57c5a0;}
+.slider__carou__hover--article{color: #acacac;
+                                margin: 10px;}
+.slider__carou__hover--legende{color:#686868}
