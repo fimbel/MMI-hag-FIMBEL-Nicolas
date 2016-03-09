@@ -11,13 +11,13 @@
 	</head>	
 <body>
     <header>
-        <div class="box_title clearfix">
+        <section class="box_title clearfix">
             <div class="wrapper margin">
                 <h1 class="box_title--title1 flottante">FOOSESHOES</h1>
                 <div class="box_title__search flotright"><a class="box_title__search--lien" href='#'>Login or REGISTER</a></div>
                 <div class="box_title__search flotright"><a class="box_title__search--lien" href='#'><i class="fa fa-search"></i></a></div>
             </div>
-        </div>
+        </section>
         <nav class="menu clearfix">
             <div class="wrapper margin">
             <ul>
@@ -179,37 +179,58 @@
     
     
     <!--Bande noir en bas-->
-    <footer>
-        <section>
-            <div class="wrapper">
-                <article>
-                    <h4>TEXT WIDGET</h4>
-                </article>
-                <article>
-                    <h4>TWEETER WIDGET</h4>
-                </article>
-                <article>
-                    <h4>FLICKR WIDGET</h4>
-                </article>
+    
+    <section class="prefooter">
+        <div class="wrapper margin flexbox">
+			<article class="prefooter__article">
+                <h4 class="prefooter__article--titre">TEXT WIDGET</h4>
+				<p class="prefooter__article--text text">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            </article>
+            <article class="prefooter__article">
+                <h4 class="prefooter__article--titre">TWEETER WIDGET</h4>
+                <p class="prefooter__article--text text"><cite class="prefooter__article--text--citation">@ericafustero</cite> Why thank you. Your work looks awesome by the way! <cite class="prefooter__article--text--citation">@treemelody</cite></p>
+				<p class="prefooter__article--text text">19 days ago</p>
+                    <p class="prefooter__article--text text"><cite class="prefooter__article--text--citation">@roymarvelous</cite> You can seek a refund through TF if it is not as advertised - but it is :)</p>
+				<p class="prefooter__article--text text">21 days ago</p>
+            </article>
+            <article class="prefooter__article">
+                <h4 class="prefooter__article--titre">FLICKR WIDGET</h4>
+				<img src="./images/groupe-image.png" alt="">
+            </article>
+        </div>
+    </section>
+    <hr>
+    <section class="prefooter">
+        <div class="wrapper margin clearfix">
+            <div class="flottante">
+                <p class="flottante"><input class="prefooter--email" type="text" name="email" id="email" placeholder="Enter email for Newsletter" size="30" /></p>
+                <button class="prefooter--bouton"><i class="fa fa-arrow-right"></i></button>
             </div>
-        </section>
-        <section>
-            <p>Coopirate FOOSESHOES 2013</p>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>About</li>
-                    <li>Pages</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            <p>Designed by EnzoLivolti</p>
-        </section>
-        <section>
-        
-        </section>
+            <div class="flotright">
+                <div class="prefooter__rezssociaux flottante"><i class="fa fa-facebook"></i></div>
+                <div class="prefooter__rezssociaux flottante"><i class="fa fa-twitter"></i></div>
+                <div class="prefooter__rezssociaux flottante"><i class="fa fa-google-plus"></i></div>
+                <div class="prefooter__rezssociaux flottante"><i class="fa fa-linkedin"></i></div>
+                <div class="prefooter__rezssociaux flottante"><i class="fa fa-flickr"></i></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">    
+			<div class="clearfix wrapper margin">
+                <div class="flottante">
+				    <p>Coopirate FOOSESHOES 2013</p>
+				    <p>Designed by EnzoLivolti</p>
+                </div>
+				<nav class="flotright">
+					<ul>
+						<li class="flottante"><a href="#">Home</a></li>
+                        <li class="flottante"><a href="#">Support</a></li>
+                        <li class="flottante"><a href="#">Terms and conditions</a></li>
+                        <li class="flottante"><a href="#">Faqs</a></li>
+                        <li class="flottante"><a href="#">Contact us</a></li>
+					</ul>
+				</nav>
+			</div>	
     </footer>
 </body>
 </html>

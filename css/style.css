@@ -1,6 +1,6 @@
 /*-----------------Class g�n�rale-------------------------------------*/
 html {}
-body{background-color: #ebe7df;}
+body{}
 		
 *{margin:0;}
 		
@@ -107,7 +107,7 @@ a{display:block;
 
 /*------------------------------------------offre----------------------------*/
 .offre{background-color: #ebe7df;
-        margin-top:30px;}
+        padding-top: 30px;}
 
 .offre--show{border: solid 1px #bcb5a7;
                 color: #bcb5a7;
@@ -154,3 +154,37 @@ a{display:block;
                     text-align: center;
                     background-color: #57c5a0;
                     margin: 0 10px 10px 0;}
+					
+
+/*------------------------------------------prefooter----------------------------*/
+.prefooter{background-color:#242424;
+			padding: 50px 0;}
+
+.prefooter__article{margin:0 30px;
+					width:260px;}
+
+.prefooter__article--titre{color:#6b6b6b;
+							margin-bottom:15px;}
+.prefooter__article--text{color:#939393}
+.prefooter__article--text--citation{color:#57c5a0}
+
+.prefooter--email{background-color:#2e2e2e;
+                    color:#939393;
+                    border:solid 0;
+                    padding: 12px;}
+.prefooter--bouton{background-color:#939393;
+                        height: 39px;
+                        width: 39px;}
+.prefooter__rezssociaux{background-color:#2e2e2e;
+                            color:#939393;
+                            width:40px;
+                            height:40px;
+                            line-height: 40px;
+                            margin: 0 10px;
+                            text-align: center;
+                            font-size: 25px;}
+
+
+/*------------------------------------------footer----------------------------*/
+.footer{background-color: #2e2e2e;
+                            color:#939393}
