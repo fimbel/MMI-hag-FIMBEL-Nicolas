@@ -59,7 +59,21 @@ a{display:block;
 
 
 /*------------------------------------------slider----------------------------*/
+.slider{position:relative;}
 .slider__image{width:100%;}
+.slider__images__info{width:385px;
+                        position: absolute;
+                        top: 75px;
+                        right:270px;}
+.slider__images__info--titre{margin:20px 0;
+                                font-size: 35px;
+                                width: 235px;}
+.slider__images__info--text{margin-bottom: 15px;}
+.slider__images__info--icon{background-color: #ffffff;
+                                padding: 15px;
+                                margin: 0 2px;}
+
+.prix2{background-color: #57c5a0;}
 
 .slider__carou{width:100%;
                 height:90px;
@@ -118,24 +132,45 @@ a{display:block;
 .offre__3chaussures__schoose{margin:0 12px;
                                 position: relative;}
 
+/*Bidouillage pour le changement au survol de la boite*/
+.offre__3chaussures__shoose__hover{position: relative;}
 .offre__3chaussures__shoose--nom{background-color: #ffffff;
-                                    text-align: center;
-                                    padding: 15px;}
+                                    padding: 15px 90px;
+                                    opacity: 1;}
+.offre__3chaussures__shoose__hover:hover > .offre__3chaussures__shoose--nom{transition: opacity 0.5s ease-out;
+                                                                                top: -50px;
+                                                                                opacity: 0;}
+.offre__3chaussures__schoose__icon{padding-left: 90px;
+                                        width:210px;
+                                        background-color: #ffffff;
+                                        /*On ajoute du code --> pour qu'au survole la boite disparaise*/
+                                        position: absolute;
+                                        opacity: 0;
+                                        transition-property: opacity;
+                                        transition-duration: 0.5s;}
+.offre__3chaussures__shoose__hover:hover > .offre__3chaussures__schoose__icon{transition: opacity 0.5s ease-out 0.5s;        /*l'opacity se fait en 0.5s maits Attend 0.5 secondes avant de la faire*/
+                                                                                top: 0px;
+                                                                                opacity: 1;}
 
 .offre__3chaussures__shoose--ptitcarre{width:65px;
                                         height: 65px;
-                                        line-height: 60px;
                                         color: #ffffff;
                                         text-align: center;
-                                        position: absolute;}
+                                        /*utilisation de flexbox pour centrer verticalement*/
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;}
 .prix{background-color: #57c5a0;
-        bottom: 0px;
+    position: absolute;    
+    bottom: 0px;
         left: 12px;}
 .sale{background-color: #000000;
+        position: absolute;
         top: 0px;
         right: 12px;}
 
 .stock{background-color: #f27e4b;
+        position: absolute;
         top: 0px;
         right: 12px;}
 
@@ -149,11 +184,14 @@ a{display:block;
 
 .offre__addon--date{width:40px;
                     height: 40px;
-                    line-height: 35px;
                     color: #ffffff;
                     text-align: center;
                     background-color: #57c5a0;
-                    margin: 0 10px 10px 0;}
+                    margin: 0 10px 10px 0;
+                    /*utilisation de flexbox pour centrer verticalement*/
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;}
 					
 
 /*------------------------------------------prefooter----------------------------*/
@@ -167,6 +205,10 @@ a{display:block;
 							margin-bottom:15px;}
 .prefooter__article--text{color:#939393}
 .prefooter__article--text--citation{color:#57c5a0}
+
+.prefooter__article--images{margin:3px;
+                            width:77px;
+                            height:56px;}
 
 .prefooter--email{background-color:#2e2e2e;
                     color:#939393;
@@ -183,8 +225,11 @@ a{display:block;
                             margin: 0 10px;
                             text-align: center;
                             font-size: 25px;}
-
+.prefooter--hr{border-color: #1c1c1c;}
 
 /*------------------------------------------footer----------------------------*/
 .footer{background-color: #2e2e2e;
-                            color:#939393}
+                            color:#939393;
+                            padding: 30px 0;}
+.footer--lien{color:#939393;
+                margin: 8px 3px;}
