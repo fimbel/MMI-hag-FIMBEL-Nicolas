@@ -22,8 +22,8 @@ body{}
 a{display:block;
     text-decoration: none;}
 
-.text{font-family: '';
-        margin:12px 0}
+.text{font-family: 'Mission-Gothic-Light';}
+.titre{font-family: 'Mission-Gothic-Regular-Italic';}
 
 .wrapper{width:70%;}
 
@@ -181,6 +181,8 @@ a{display:block;
 .taille2{flex-basis:220px;
             margin:30px 20px;}
 .taille3{flex-basis:460px;}
+
+.offre__addon--text{margin:12px 0;}
 
 .offre__addon--date{width:40px;
                     height: 40px;
